@@ -72,6 +72,7 @@
 				console.log(DB);
 			} catch (error) {
 				// IndexedDB Not Found
+				console.log('IndexedDB not found', error);
 			}
 
 			const userSettings = await getUserSettings(localStorage.token).catch((error) => {
